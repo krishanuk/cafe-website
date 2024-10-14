@@ -1,0 +1,499 @@
+
+a {
+    text-decoration: none;
+}
+
+.header {
+
+    height: 0px;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 1000; 
+    padding: 0px 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    
+}
+
+.header .nav .logo {
+    font-size: 52px;
+}
+
+.header .nav .navbar a {
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.header .nav .icon {
+    position: relative;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.header .nav .account {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.header .nav .icon:hover + .account,
+.header .nav .account:hover {
+    display: block;
+}
+
+
+
+.header .nav .navbar a:hover{
+    color: #00CECB;
+
+}
+
+
+/* Dashboard section styles */
+.dashboard {
+
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.dashboard .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 30px;
+}
+
+.dashboard .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard .box {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard .box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard .box p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+/* Addproducts section styles */
+.addproducts {
+
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+    
+}
+
+.addproducts .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.addproducts form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.addproducts form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.addproducts form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addproducts .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.addproducts .btn button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addproducts .btn button:hover {
+    background-color: #4cae4c;
+}
+
+/*  Display Product Section in Add Product page  */
+
+.displayProducts{
+    display:flex;
+    width: 100%;
+}
+
+.displayProducts .productContainer{
+   display: grid;
+   text-align: center;
+   grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    margin-top: 50px;
+    max-width: 1200px;
+    align-items: flex-start;
+    
+    
+}
+
+ .displayProducts .productContainer .product{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+ }
+
+ .displayProducts .productContainer .product img{
+    height: 150px;
+    border-radius: 10px;
+ }
+
+ .listEmpty{
+    font-size: 30px;
+    
+ }
+
+/*  update Product Section in add Product page  */
+
+ .update-ptoduct{
+    margin-top: 50px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    overflow-y: scroll;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1200;
+    width: 100%;
+
+ }
+
+ 
+ .update-ptoduct{
+    width: 50rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+ }
+
+
+
+ /* Message section styles */
+ .messages {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.messages h1{
+    text-align: center;
+}
+
+.message-container {
+    margin-top: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.message-container .box {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+
+/*--------------------------Staff Section--------------------------*/
+
+
+
+.view-reservation {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-reservation .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.box p span {
+    font-weight: bold;
+    color: #555;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: #fafafa;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.order-btn:hover {
+    background-color: #5cb85c;
+}
+
+
+
+/*--------------------------Staff Order Update Section--------------------------*/
+.update-order {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-order form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-order label {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.update-order input,
+.update-order select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.update-order input[type="submit"] {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+/*---------------------------Reservation---------------------------*/
+
+
+.views-reservation {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.views-reservation .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.res-box {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.res-box p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.res-box p span {
+    font-weight: bold;
+    color: #555;
+}
+
+.delete-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4cae4c;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #4cae4c;
+}
+
+
+/*---------------------------Update Reservation----------------*/
+.update-reservation {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-reservation form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-reservation label {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.update-reservation input,
+.update-reservation select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.update-reservation .reservation-btn{
+    background-color: #4cae4c;
+}
+
+
+ 
+
+/* For Mobile Devicess */
+@media(max-width:700px){
+  
+    .header .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .header .nav .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+        width: 100%;
+       
+    }
+
+    .header .nav .navbar a {
+        margin: 10px 0;
+        padding: 5px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .header .nav .icon{
+        display: none;
+    }
+
+    
+}
+
+
